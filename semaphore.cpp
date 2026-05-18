@@ -1,16 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 #include <unistd.h>
 #include <semaphore.h>
 #include <sys/wait.h>
+
+using namespace std;
 
 sem_t mutex;
 
 void print_lines() {
     pid_t pid = getpid();
     sem_wait(&mutex);
-    printf("Hello I am process no %d\n", pid);
-    printf("Hello I am process no %d\n", pid);
+    cout << "Hello I am process no " << pid << endl;
+    cout << "Hello I am process no " << pid << endl;
     sem_post(&mutex);
 }
 
