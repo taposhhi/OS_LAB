@@ -11,7 +11,7 @@ int main() {
     stat("test.txt", &s);
 
     cout << "Name- Taposhi Rabeya" << endl;
-    cout << "Id- 22201100" << endl;
+    cout << "Id- 22201060" << endl;
     cout << "Course- OS Lab" << endl;
     cout << "File Size: " << s.st_size << " bytes" << endl;
     cout << "Inode Number: " << s.st_ino << endl;
